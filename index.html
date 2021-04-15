@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <form>
+        <div id="phone-div">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" placeholder="+7 (123) 123-12-12"
+                   onfocusout="checkPhoneMask(this.value)" required>
+        </div>
+        <div class="buttons-div" id="button_div">
+            <input class="button-active" type="button" id="1" value="Click me" onclick="spawnTwoButtons(this.id)">
+        </div>
+        <div id="file-div">
+            <div class="file-inputs" id="file-inputs">
+                <input type="file" required>
+            </div>
+            <input type="button" value="+" onclick="createNewFileInput()">
+            <input type="button" value="-" onclick="removeLastFileInput()">
+        </div>
+        <input type="submit" id="submitForm" value="Submit" onclick="validateInputs()" disabled>
+    </form>
+
+
+</body>
+</html>

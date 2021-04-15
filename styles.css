@@ -1,0 +1,31 @@
+.button-active {
+    margin: 5px;
+    width: 80px;
+    height: 20px;
+
+    background: lightgray;
+    border: 1px;
+}
+
+.button-disabled {
+    margin: 5px;
+    width: 80px;
+    height: 20px;
+
+    background: none;
+    border: none;
+}
+
+.button-disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.buttons-div {
+    display: table-cell;
+}
+
+.file-inputs {
+    display: flex;
+    flex-direction: column;
+}
