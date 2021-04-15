@@ -8,16 +8,16 @@
 <link rel="stylesheet" href="styles.css">
 <body>
     <form>
-        <div id="phone-div">
+        <div id="phoneDiv">
             <label for="phone">Enter your phone number:</label>
             <input type="tel" id="phone" placeholder="+7 (123) 123-12-12"
                    onfocusout="checkPhoneMask(this.value)" required>
         </div>
-        <div class="buttons-div" id="button_div">
+        <div class="buttons-div" id="buttonDiv">
             <input class="button-active" type="button" id="1" value="Click me" onclick="spawnTwoButtons(this.id)">
         </div>
-        <div id="file-div">
-            <div class="file-inputs" id="file-inputs">
+        <div id="fileDiv">
+            <div class="file-inputs" id="fileInputs">
                 <input type="file" required>
             </div>
             <input type="button" value="+" onclick="createNewFileInput()">
